@@ -41,7 +41,7 @@ resource "aws_spot_instance_request" "jenkins-instance" {
   subnet_id          = aws_subnet.public-subnet-1.id
   associate_public_ip_address = true
   tags = {
-    Name = "jenkins-server"
+    Name = "jenkins-control"
   }
 }
 
